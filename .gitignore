@@ -1,0 +1,13 @@
+.conda/
+.conda-pkgs/
+.home/
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+*.pyo
+*.log
+executed/
+tmp/
+tmp_*/
+tmp_github_known_hosts
+data/raw/esol_source.csv
