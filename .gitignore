@@ -5,8 +5,11 @@ __pycache__/
 .ipynb_checkpoints/
 *.pyc
 *.pyo
-*.log
+*.logc
 executed/
 tmp/
 tmp_*/
 data/raw/esol_source.csv
+validate_materials.py
+build_notebook.py
+smoke_test.py

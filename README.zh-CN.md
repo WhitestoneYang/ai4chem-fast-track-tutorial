@@ -44,8 +44,6 @@
 cd materials
 conda env create -f environment.yml
 conda activate ai4chem-practice
-python validate_materials.py
-python smoke_test.py
 jupyter lab notebooks/zh-CN/00_course_map.ipynb
 ```
 
@@ -68,25 +66,9 @@ materials/
 ├── worksheet.md            # 英文学习记录表
 ├── worksheet.zh-CN.md      # 中文学习记录表
 ├── environment.yml         # Conda 环境
-├── requirements.txt        # pip 依赖
-├── validate_materials.py   # 结构和语法检查
-├── smoke_test.py           # 端到端环境冒烟测试
-└── build_notebook.py       # notebook 生成脚本
+└── requirements.txt        # pip 依赖
 ```
 
-## 质量检查
-
-`validate_materials.py` 使用 Python 标准库检查文件结构、数据列、notebook JSON 和代码语法：
-
-```bash
-python validate_materials.py
-```
-
-`smoke_test.py` 会实际运行 RDKit、descriptor/fingerprint 计算、ESOL 建模和 Buchwald-Hartwig 搜索流程：
-
-```bash
-python smoke_test.py
-```
 
 ## License
 

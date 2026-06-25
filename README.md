@@ -29,16 +29,16 @@ Chinese localized notebooks are available in `notebooks/zh-CN/`.
 
 ## Notebook Catalog
 
-| Notebook | Topic |
-| --- | --- |
-| `00_course_map.ipynb` | Course map: how to learn AI + chemistry practice |
-| `01_molecules_as_data.ipynb` | SMILES, canonical SMILES, and molecular visualization |
-| `02_descriptors_fingerprints_similarity.ipynb` | Descriptors, fingerprints, and Tanimoto similarity |
-| `03_esol_dataset_curation.ipynb` | ESOL curation, LogS, and scaffold split |
-| `04_property_prediction.ipynb` | Baselines, Ridge, RandomForest, RMSE, and parity plots |
-| `05_model_reliability.ipynb` | Splits, data leakage, and applicability domain |
-| `06_molecular_space.ipynb` | Fingerprint PCA and molecular-space visualization |
-| `07_reaction_optimization.ipynb` | Buchwald-Hartwig reaction optimization and surrogate loops |
+| Notebook                                         | Topic                                                      |
+| ------------------------------------------------ | ---------------------------------------------------------- |
+| `00_course_map.ipynb`                          | Course map: how to learn AI + chemistry practice           |
+| `01_molecules_as_data.ipynb`                   | SMILES, canonical SMILES, and molecular visualization      |
+| `02_descriptors_fingerprints_similarity.ipynb` | Descriptors, fingerprints, and Tanimoto similarity         |
+| `03_esol_dataset_curation.ipynb`               | ESOL curation, LogS, and scaffold split                    |
+| `04_property_prediction.ipynb`                 | Baselines, Ridge, RandomForest, RMSE, and parity plots     |
+| `05_model_reliability.ipynb`                   | Splits, data leakage, and applicability domain             |
+| `06_molecular_space.ipynb`                     | Fingerprint PCA and molecular-space visualization          |
+| `07_reaction_optimization.ipynb`               | Buchwald-Hartwig reaction optimization and surrogate loops |
 
 ## Quick Start
 
@@ -46,8 +46,6 @@ Chinese localized notebooks are available in `notebooks/zh-CN/`.
 cd materials
 conda env create -f environment.yml
 conda activate ai4chem-practice
-python validate_materials.py
-python smoke_test.py
 jupyter lab notebooks/00_course_map.ipynb
 ```
 
@@ -70,25 +68,9 @@ materials/
 ├── worksheet.md            # English worksheet
 ├── worksheet.zh-CN.md      # Chinese worksheet
 ├── environment.yml         # Conda environment
-├── requirements.txt        # pip dependencies
-├── validate_materials.py   # Structure and syntax checks
-├── smoke_test.py           # End-to-end environment smoke test
-└── build_notebook.py       # Notebook generation script
+└── requirements.txt        # pip dependencies
 ```
 
-## Quality Checks
-
-`validate_materials.py` uses only the Python standard library to check file structure, data columns, notebook JSON, code syntax, and bilingual material coverage:
-
-```bash
-python validate_materials.py
-```
-
-`smoke_test.py` runs RDKit parsing, descriptor/fingerprint calculation, ESOL modeling, and the Buchwald-Hartwig search workflow:
-
-```bash
-python smoke_test.py
-```
 
 ## License
 
