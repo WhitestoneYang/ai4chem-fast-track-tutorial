@@ -1,4 +1,4 @@
-.conda/
+c.conda/
 .conda-pkgs/
 .home/
 __pycache__/
@@ -9,5 +9,4 @@ __pycache__/
 executed/
 tmp/
 tmp_*/
-tmp_github_known_hosts
 data/raw/esol_source.csv
