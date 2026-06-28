@@ -53,10 +53,10 @@ jupyter lab notebooks/zh-CN/00_course_map.ipynb
 
 ```text
 materials/
-├── notebooks/              # 英文主 notebook
+├── notebooks/              # 英文 notebook
 │   └── zh-CN/              # 中文 notebook
 ├── data/
-│   ├── raw/                # ESOL 与 Buchwald-Hartwig CSV
+│   ├── raw/                # ESOL 与 Buchwald-Hartwig *.CSV data
 │   ├── examples/           # 小型示例分子表
 │   └── cards/              # 数据卡和来源说明
 ├── docs/                   # 英文文档
@@ -68,7 +68,6 @@ materials/
 ├── environment.yml         # Conda 环境
 └── requirements.txt        # pip 依赖
 ```
-
 
 ## License
 
