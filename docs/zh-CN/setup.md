@@ -11,6 +11,7 @@
 在 `ai4chem-fast-track-tutorial` 目录运行：
 
 ```bash
+cd ai4chem-fast-track-tutorial/
 conda env create -f environment.yml
 conda activate ai4chem-practice
 ```
@@ -51,3 +52,4 @@ notebooks/00_course_map.ipynb
 - RDKit import 失败：确认已经 `conda activate ai4chem-practice`。
 - notebook 找不到数据：确认当前目录是 `ai4chem-fast-track-tutorial`，并且存在 `data/raw/esol.csv`。
 - 图不显示：重启 kernel 后从 notebook 第一格重新运行。
+

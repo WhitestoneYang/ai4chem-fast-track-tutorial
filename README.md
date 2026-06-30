@@ -42,12 +42,13 @@
 
 ```bash
 
+cd ai4chem-fast-track-tutorial/
 conda env create -f environment.yml
 conda activate ai4chem-practice
 jupyter lab notebooks/zh-CN/00_course_map.ipynb
 ```
 
-详细安装说明见 `docs/zh-CN/setup.md`。
+* [ ] 详细安装说明见 `docs/zh-CN/setup.md`。
 
 ## 仓库结构
 
