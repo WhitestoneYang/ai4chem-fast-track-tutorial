@@ -1,4 +1,4 @@
-name: ai4chem-practice
+name: ai4chem-practice-2
 channels:
   - conda-forge
 dependencies:

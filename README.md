@@ -1,77 +1,74 @@
-# AI4Chem Basic Practice Tutorial
+# AI4Chem 基础实践教程
 
-English | [简体中文](README.zh-CN.md)
+[English](README.en.md) | 简体中文
 
-A self-contained Jupyter tutorial for a fast first pass through AI for Chemistry. The tutorial starts from molecular representation and moves through descriptors, fingerprints, similarity, dataset curation, property prediction, model reliability, molecular-space visualization, and reaction optimization.
+一套自给自足的 Jupyter 教程，面向希望入门 AI for Chemistry 的低年级本科生。教程从分子表示开始，逐步进入 descriptor、fingerprint、相似性、数据整理、性质预测、模型可靠性、分子空间可视化和反应优化。
 
-Originally prepared for the 2026 Tsinghua University AI for Chemistry Interdisciplinary Practice Summer Course, this repository has been reorganized as a self-contained, bilingual public tutorial for 4-8 hour fast-track learning.
+本教程最初为“2026年清华大学 AI for Chemistry 交叉实践暑期课程”准备，现整理为一套自给自足、双语、可公开使用的 4-8 小时 AI4Chem 快速入门教程。
 
-The repository is designed to run offline after installation: notebooks, small teaching datasets, data cards, validation scripts, and worksheets are included in `materials/`.
+本仓库可以离线运行：notebook、示例数据、数据卡和验证脚本都包含在 `materials/` 中。
 
-## Acknowledgements and Data Sources
+## 致谢与数据来源
 
-This tutorial is inspired by the Schwaller group open course [`schwallergroup/ai4chem_course`](https://github.com/schwallergroup/ai4chem_course). It is a compact 4-8 hour fast-track version for self-learners who want to grasp the basic AI4Chem workflow quickly. For a fuller and more systematic AI4Chem course, refer to the original Schwaller group materials.
+本教程受 Schwaller group 开源课程 [`schwallergroup/ai4chem_course`](https://github.com/schwallergroup/ai4chem_course) 的启发，是一个短时快速入门教程，目标是帮助自学者在 4-8 小时内掌握 AI4Chem 的基础。希望系统完整学习 AI4Chem 的读者，建议进一步参考 Schwaller group 的原课程。
 
-The tutorial uses and cites the following public datasets and references:
+教程使用并标注了以下公开数据和文献来源：
 
-- ESOL aqueous solubility data: Delaney, J. S. *Journal of Chemical Information and Computer Sciences*, 2004. https://doi.org/10.1021/ci034243x
-- Buchwald-Hartwig C-N cross-coupling data: Ahneman, D. T.; Estrada, J. G.; Lin, S.; Dreher, S. D.; Doyle, A. G. *Science*, 2018. https://doi.org/10.1126/science.aar5169
+- ESOL 水溶性数据：Delaney, J. S. *Journal of Chemical Information and Computer Sciences*, 2004. https://doi.org/10.1021/ci034243x
+- Buchwald-Hartwig C-N cross-coupling 数据：Ahneman, D. T.; Estrada, J. G.; Lin, S.; Dreher, S. D.; Doyle, A. G. *Science*, 2018. https://doi.org/10.1126/science.aar5169
 
-Dataset fields, intended use, and limitations are documented in `data/cards/`. Software and literature links are summarized in `docs/references.md`.
+数据字段、用途和限制见 `data/cards/`。软件和文献链接汇总见 `docs/zh-CN/references.md`。
 
-## Learning Paths
+## 学习路径
 
-- 4h: `00` -> `01` -> `02` -> `03` -> `04` -> `05`
-- 6h: 4h path + `06_molecular_space.ipynb`
-- 8h: run `notebooks/00_course_map.ipynb` through `notebooks/07_reaction_optimization.ipynb`, then complete `worksheet.md`
+- 4h：`00` -> `01` -> `02` -> `03` -> `04` -> `05`
+- 6h：4h 路线 + `06_molecular_space.ipynb`
+- 8h：完整运行 `notebooks/zh-CN/00_course_map.ipynb` 到 `notebooks/zh-CN/07_reaction_optimization.ipynb`，并完成 `worksheet.zh-CN.md`
 
-Chinese localized notebooks are available in `notebooks/zh-CN/`.
+## Notebook 目录
 
-## Notebook Catalog
+| Notebook                                         | Topic                                            |
+| ------------------------------------------------ | ------------------------------------------------ |
+| `00_course_map.ipynb`                          | 课程地图：AI+化学实践如何学习                    |
+| `01_molecules_as_data.ipynb`                   | SMILES、canonical SMILES、分子可视化             |
+| `02_descriptors_fingerprints_similarity.ipynb` | descriptor、fingerprint、Tanimoto similarity     |
+| `03_esol_dataset_curation.ipynb`               | ESOL 数据整理、LogS、scaffold split              |
+| `04_property_prediction.ipynb`                 | baseline、Ridge、RandomForest、RMSE、parity plot |
+| `05_model_reliability.ipynb`                   | split、data leakage、applicability domain        |
+| `06_molecular_space.ipynb`                     | fingerprint PCA 和分子空间可视化                 |
+| `07_reaction_optimization.ipynb`               | Buchwald-Hartwig 反应优化和 surrogate loop       |
 
-| Notebook                                         | Topic                                                      |
-| ------------------------------------------------ | ---------------------------------------------------------- |
-| `00_course_map.ipynb`                          | Course map: how to learn AI + chemistry practice           |
-| `01_molecules_as_data.ipynb`                   | SMILES, canonical SMILES, and molecular visualization      |
-| `02_descriptors_fingerprints_similarity.ipynb` | Descriptors, fingerprints, and Tanimoto similarity         |
-| `03_esol_dataset_curation.ipynb`               | ESOL curation, LogS, and scaffold split                    |
-| `04_property_prediction.ipynb`                 | Baselines, Ridge, RandomForest, RMSE, and parity plots     |
-| `05_model_reliability.ipynb`                   | Splits, data leakage, and applicability domain             |
-| `06_molecular_space.ipynb`                     | Fingerprint PCA and molecular-space visualization          |
-| `07_reaction_optimization.ipynb`               | Buchwald-Hartwig reaction optimization and surrogate loops |
-
-## Quick Start
+## 快速开始
 
 ```bash
-cd materials
+
 conda env create -f environment.yml
 conda activate ai4chem-practice
-jupyter lab notebooks/00_course_map.ipynb
+jupyter lab notebooks/zh-CN/00_course_map.ipynb
 ```
 
-See `docs/setup.md` for installation notes.
+详细安装说明见 `docs/zh-CN/setup.md`。
 
-## Repository Structure
+## 仓库结构
 
 ```text
 materials/
-├── notebooks/              # English tutorial notebooks
-│   └── zh-CN/              # Chinese localized notebooks
+├── notebooks/              # 英文 notebook
+│   └── zh-CN/              # 中文 notebook
 ├── data/
-│   ├── raw/                # ESOL and Buchwald-Hartwig CSV files
-│   ├── examples/           # Small example molecule table
-│   └── cards/              # Dataset cards and provenance notes
-├── docs/                   # English setup, background, glossary, cheatsheet, references
-│   └── zh-CN/              # Chinese localized docs
-├── worksheets/             # Discussion questions
-│   └── zh-CN/              # Chinese localized discussion questions
-├── worksheet.md            # English worksheet
-├── worksheet.zh-CN.md      # Chinese worksheet
-├── environment.yml         # Conda environment
-└── requirements.txt        # pip dependencies
+│   ├── raw/                # ESOL 与 Buchwald-Hartwig *.CSV data
+│   ├── examples/           # 小型示例分子表
+│   └── cards/              # 数据卡和来源说明
+├── docs/                   # 英文文档
+│   └── zh-CN/              # 中文文档
+├── worksheets/             # 英文讨论任务
+│   └── zh-CN/              # 中文讨论任务
+├── worksheet.md            # 英文学习记录表
+├── worksheet.zh-CN.md      # 中文学习记录表
+├── environment.yml         # Conda 环境
+└── requirements.txt        # pip 依赖
 ```
-
 
 ## License
 
-Original tutorial text, code, and notebook structure in this repository are released under the MIT License; see `LICENSE`. Distributed datasets retain their original provenance and citation requirements. Keep `data/cards/` and `docs/references.md` with any reuse or redistribution.
+本仓库中的原创教程文本、代码和 notebook 结构以 MIT License 发布，见 `LICENSE`。随仓库分发的数据保留其原始来源和引用要求，使用或再分发时请同时保留 `data/cards/` 与 `docs/zh-CN/references.md`。
