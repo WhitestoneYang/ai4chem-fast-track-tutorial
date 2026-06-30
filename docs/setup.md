@@ -8,7 +8,7 @@ If `conda` is already installed, skip this step. Conda is recommended because RD
 
 ## 2. Create the Tutorial Environment
 
-From the `materials` directory:
+From the `ai4chem-fast-track-tutorial` directory:
 
 ```bash
 conda env create -f environment.yml
@@ -51,3 +51,4 @@ Work through the notebooks in order. With limited time, complete `00` to `05` fi
 - RDKit import fails: confirm that `conda activate ai4chem-practice` has been run.
 - A notebook cannot find data: confirm the current working directory is `materials` and `data/raw/esol.csv` exists.
 - Figures do not display: restart the kernel and rerun from the first cell.
+

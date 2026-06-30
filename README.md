@@ -52,7 +52,7 @@ jupyter lab notebooks/zh-CN/00_course_map.ipynb
 ## 仓库结构
 
 ```text
-materials/
+ai4chem-fast-track-tutorial/
 ├── notebooks/              # 英文 notebook
 │   └── zh-CN/              # 中文 notebook
 ├── data/

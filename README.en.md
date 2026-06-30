@@ -43,7 +43,7 @@ Chinese localized notebooks are available in `notebooks/zh-CN/`.
 ## Quick Start
 
 ```bash
-cd materials
+cd ai4chem-fast-track-tutorial
 conda env create -f environment.yml
 conda activate ai4chem-practice
 jupyter lab notebooks/00_course_map.ipynb
@@ -74,4 +74,4 @@ materials/
 
 ## License
 
-Original tutorial text, code, and notebook structure in this repository are released under the MIT License; see `LICENSE`. 
+Original tutorial text, code, and notebook structure in this repository are released under the MIT License; see `LICENSE`.
