@@ -71,4 +71,4 @@ materials/
 
 ## License
 
-本仓库中的原创教程文本、代码和 notebook 结构以 MIT License 发布，见 `LICENSE`。随仓库分发的数据保留其原始来源和引用要求，使用或再分发时请同时保留 `data/cards/` 与 `docs/zh-CN/references.md`。
+本仓库中的原创教程文本、代码和 notebook 结构以 MIT License 发布，见 `LICENSE`。

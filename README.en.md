@@ -74,4 +74,4 @@ materials/
 
 ## License
 
-Original tutorial text, code, and notebook structure in this repository are released under the MIT License; see `LICENSE`. Distributed datasets retain their original provenance and citation requirements. Keep `data/cards/` and `docs/references.md` with any reuse or redistribution.
+Original tutorial text, code, and notebook structure in this repository are released under the MIT License; see `LICENSE`. 
